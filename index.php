@@ -9,7 +9,15 @@
 <body>
     <p>
         <?php
-            "Ciao come stai bicicletta come stfff, dddddd mercoledì come stai macchina come. Ciao va come vai a casa?"
+            $paragraph = "Ciao come stai bicicletta come stfff, dddddd mercoledì come stai macchina come. Ciao va come vai a casa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque officiis harum impedit vitae come. Autem magnam excepturi cumque, enim come voluptatibus, nemo, reiciendis minima come optio sequi? Suscipit, esse cum.";
+            $length = strlen($paragraph);
+            echo '<pre>' . $paragraph . "\r\n" . $length . '</pre>';
+
+            $word = $_GET["word"];
+
+            $new_paragraph = str_replace($word, "***", $paragraph);
+            $new_length = strlen($new_paragraph);
+            echo '<pre>' . $new_paragraph . "\r\n" . $new_length . '</pre>'; 
         ?>
     </p>
 </body>
